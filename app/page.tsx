@@ -13,17 +13,11 @@ export default function Page() {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           
-          <h1 className="text-blue-500">I am blue!</h1>
-          <p className="subpixel-antialiased ...">The quick brown fox ...</p>
-          <p className="antialiased ...">The quick brown fox ...</p>
-          <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}></p>
+          <h1 className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal antialiased`}><strong className='subpixel-antialiased'>Ukrainian Women in Tech</strong> </h1>
           
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
+          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal antialiased`}>
+            Welcome to our community of Ukrainian women working in tech in <span className="text-blue-500">Stockholm</span>! 
+            Our group aims to provide a supportive space for women to connect, network, and share experiences and insights about working in the tech industry.
           </p>
           <Link
             href="/login"
@@ -34,6 +28,13 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image
+              src="/image.jpg"
+              width={1000}
+              height={760}
+              className="hidden md:block"
+              alt="Screenshots of the dashboard project showing desktop version"
+            />
+          {/* <Image
             src="/hero-desktop.png"
             width={1000}
             height={760}
@@ -44,10 +45,9 @@ export default function Page() {
             src="/hero-mobile.png"
             width={560}
             height={620}
-            // className="md:hidden sm:block"
             className="block md:hidden"
             alt="Screenshot of the dashboard project showing mobile version"
-          />
+          /> */}
         </div>
       </div>
     </main>
